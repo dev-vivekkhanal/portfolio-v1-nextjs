@@ -14,7 +14,7 @@ function Home() {
       className="relative text-center bg-[url('../assets/images/homeBg.webp')] bg-cover bg-no-repeat bg-center  text-white"
     >
       <div className="bg-[#00000080] h-screen pt-[200px]">
-        <p className="text-2xl lg:text-[28px]">Plan > Build > Optimise</p>
+        <p className="text-2xl lg:text-[28px]">Plan &gt; Build &gt; Optimise</p>
         <p className="text-[2.5rem]   max-w-2xl  m-auto mt-12 sm:text-6xl md:text-6xl lg:text-7xl lg:max-w-3xl  lg:leading-tight">
           I build awesome web apps using modern workflows
         </p>

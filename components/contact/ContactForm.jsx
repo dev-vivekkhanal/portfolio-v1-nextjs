@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { send } from "emailjs-com";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
   const [senderName, setSenderName] = useState("");
@@ -25,12 +25,13 @@ function ContactForm() {
   const sendMail = (e) => {
     e.preventDefault();
 
-    send(
-      "service_sppd7un",
-      "template_i7097af",
-      { senderName, senderEmail, senderMessage },
-      "user_NNdYEC8w2bsbkaV2JXrD4"
-    )
+    emailjs
+      .send(
+        "service_sppd7un",
+        "template_i7097af",
+        { senderName, senderEmail, senderMessage },
+        "user_NNdYEC8w2bsbkaV2JXrD4"
+      )
       .then((response) => {
         console.log("Message sent succesfully", response.status, response.text);
         console.log("below is response");
