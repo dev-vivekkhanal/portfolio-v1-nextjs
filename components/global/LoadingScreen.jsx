@@ -70,7 +70,7 @@ function LoadingScreen() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 3, duration: 1.5 }}
+            transition={{ delay: 3.2, duration: 1.5 }}
             className="text-sm md:text-base lg:text-lg ml-2 mt-2 leading-none md:leading-none lg:leading-none relative"
           >
             <p>Web Developer</p>
