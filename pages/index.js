@@ -17,12 +17,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Vivek Khanal | Web Developer</title>
+        <title>Vivek Khanal | Web Dev | Engineer</title>
         <meta
           name="description"
           content="Web developer Vivek Khanal's portfolio website "
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/vivek-icon.ico" />
       </Head>
       {loading ? (
         <div className="relative cursor-default  ">
