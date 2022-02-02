@@ -33,12 +33,18 @@ function Home() {
 
         <Socials />
 
-        <div className="absolute bottom-10   w-full">
+        <motion.div
+          initial={{ bottom: -80, opacity: 0 }}
+          animate={{ bottom: "54px", opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          ease="easeIn"
+          className="absolute     w-full"
+        >
           <Link href="/#project-section">
-            <span>Projects</span>
+            <span className="p-5 cursor-pointer">Projects</span>
           </Link>
           <hr className="w-32 m-auto rotate-90 mt-[70px] border-[#ffffff]" />
-        </div>
+        </motion.div>
 
         <Waves />
       </div>

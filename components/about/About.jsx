@@ -2,6 +2,7 @@ import Skills from "./Skills";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import Link from "next/link";
 
 function About() {
   const { ref, inView } = useInView({
@@ -58,8 +59,19 @@ function About() {
               Electronics & Communication Engineer
             </strong>
             . I help designers, small agencies and businesses bring their ideas
-            to life. Check out my projects to see what I m capable of. Feel free
-            to connect or follow me on my LinkedIn.
+            to life. Check out my
+            <Link href="/#project-section">
+              <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
+                {" "}
+                projects
+              </strong>
+            </Link>{" "}
+            to see what I m capable of. Feel free to connect or follow me on my
+            <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
+              {" "}
+              LikedIn
+            </strong>
+            .
           </p>
 
           <a
