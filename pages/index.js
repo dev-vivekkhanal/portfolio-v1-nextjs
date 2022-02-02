@@ -12,7 +12,7 @@ export default function Home() {
   const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
-    setTimeout(() => setLoading(true), 4900);
+    setTimeout(() => setLoading(true), 5400);
   }, []);
   return (
     <>
@@ -25,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/vivek-icon.ico" />
       </Head>
       {loading ? (
-        <div className="relative cursor-default  ">
+        <div className="relative cursor-default bg-white ">
           <Header />
           <Landing />
           <Projects />

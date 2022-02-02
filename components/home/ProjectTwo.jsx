@@ -48,7 +48,7 @@ function ProjectTwo() {
           />
         </div>
         <div className="md:w-3/6 ">
-          <div className="md:flex md:flex-col justify-center lg:w-[80%]">
+          <div className="md:flex md:flex-col justify-center w-[80%]">
             <h2 className="text-[#6366f1] font-medium text-2xl lg:text-4xl mb-1 lg:mb-4">
               Netflix Clone
             </h2>

@@ -10,16 +10,16 @@ function LoadingScreen() {
     >
       <motion.div
         initial={{ x: "-100%" }}
-        animate={{ x: "100%" }}
-        transition={{ delay: 4.5, duration: 1 }}
-        ease="easeInOut"
+        animate={{ x: "200%" }}
+        transition={{ delay: 5, duration: 1.85 }}
+        ease="easeIn"
         className="w-[500vw] bg-gradient-to-r from-[#060c80] via-[#01014d] to-[#000000] h-full  absolute top-0 z-40 "
       ></motion.div>
       <div className="flex justify-center items-center h-screen">
         <motion.div
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
-          transition={{ delay: 4.5, duration: 0.5 }}
+          transition={{ delay: 5, duration: 0.5 }}
           className=" overflow-hidden pb-7 pt-3 "
         >
           <div className="text-3xl md:text-4xl lg:text-5xl  inline relative">
