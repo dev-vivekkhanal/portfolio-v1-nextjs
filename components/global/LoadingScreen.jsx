@@ -42,7 +42,7 @@ function LoadingScreen() {
               initial={{ y: -45, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
-                delay: 2,
+                delay: 2.5,
                 duration: 1,
                 type: "spring",
                 bounce: 0.75,
@@ -52,16 +52,16 @@ function LoadingScreen() {
               {" "}
             </motion.span>
             <motion.div
-              initial={{ x: "-100%" }}
-              animate={{ x: "100%" }}
-              transition={{ duration: 2 }}
+              initial={{ x: "-150%" }}
+              animate={{ x: "150%" }}
+              transition={{ duration: 3 }}
               ease="easeInOut"
               className="bg-gradient-to-r from-[#060c80] via-[#01014d] to-[#000000] h-full w-full absolute top-0 z-40 "
             ></motion.div>
             <motion.div
-              initial={{ x: "-110%" }}
-              animate={{ x: "110%" }}
-              transition={{ delay: 2, duration: 2 }}
+              initial={{ x: "-150%" }}
+              animate={{ x: "150%" }}
+              transition={{ delay: 2, duration: 3 }}
               ease="easeInOut"
               className="bg-gradient-to-r from-[#2364f1] via-[#0d40ad] to-[#031846] h-full w-full absolute -bottom-full z-40"
             ></motion.div>
