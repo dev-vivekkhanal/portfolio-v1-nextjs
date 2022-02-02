@@ -47,30 +47,33 @@ function ProjectTwo() {
             className="rounded-xl "
           />
         </div>
-        <div className="md:w-3/6 md:flex md:flex-col justify-center">
-          <h2 className="text-[#6366f1] font-medium text-2xl mb-1">
-            Netflix Clone
-          </h2>
-          <p className="mb-2">
-            Netflix is a streaming service that allows members to watch TV shows
-            and movies without commercials on an internet-connected device.
-          </p>
-          <h3 className="text-xl  font-semibold ">Features</h3>
-          <p className="mb-2">
-            User Authentication | Server Side Rendering | Lazy Load | API
-            integration
-          </p>
-          <h3 className="text-xl  font-semibold ">Technologies used</h3>
-          <p className="mb-5">
-            HTML | CSS | Tailwind CSS | React | Next Js | Firebase | Node Js
-          </p>
-          <div>
-            <button className="bg-[#5951ee] hover:bg-[#443bec] active:scale-95 transition-all text-white p-3 px-6 rounded cursor-pointer mr-5 ">
-              Code
-            </button>
-            <button className="bg-[#5951ee] hover:bg-[#443bec] active:scale-95 transition-all text-white p-3 px-6 rounded cursor-pointer ">
-              Live
-            </button>
+        <div className="md:w-3/6 ">
+          <div className="md:flex md:flex-col justify-center lg:w-[80%]">
+            <h2 className="text-[#6366f1] font-medium text-2xl lg:text-4xl mb-1 lg:mb-4">
+              Netflix Clone
+            </h2>
+            <p className="mb-2">
+              Netflix is a streaming service that allows members to watch TV
+              shows and movies without commercials on an internet-connected
+              device.
+            </p>
+            <h3 className="text-xl  font-semibold ">Features</h3>
+            <p className="mb-2">
+              User Authentication | Server Side Rendering | Lazy Load | API
+              integration
+            </p>
+            <h3 className="text-xl  font-semibold ">Technologies used</h3>
+            <p className="mb-5">
+              HTML | CSS | Tailwind CSS | React | Next Js | Firebase | Node Js
+            </p>
+            <div>
+              <button className="bg-[#5951ee] hover:bg-[#443bec] active:scale-95 transition-all text-white p-3 px-6 rounded cursor-pointer mr-5 ">
+                Code
+              </button>
+              <button className="bg-[#5951ee] hover:bg-[#443bec] active:scale-95 transition-all text-white p-3 px-6 rounded cursor-pointer ">
+                Live
+              </button>
+            </div>
           </div>
         </div>
       </motion.div>

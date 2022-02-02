@@ -1,14 +1,21 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import ResumeButton from "./ResumeButton";
-import Image from "next/image";
-import Linkedin from "../../assets/images/linkedin.png";
-import Github from "../../assets/images/github.png";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+import React from "react";
+import Image from "next/image";
+import Linkedin from "../../assets/images/linkedin.png";
+import Github from "../../assets/images/github.png";
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "100%" },
+};
+
 function Header() {
-  const [menuStatus, setMenuStatus] = useState("invisible");
+  const [isOpen, setIsOpen] = useState(false);
   const [navBg, setNavBg] = useState("");
 
   useEffect(() => {
@@ -36,10 +43,8 @@ function Header() {
       <div className="flex justify-between items-center p-2 md:px-4 lg:px-6 text-sm md:text-base">
         <Logo />
         <div
-          className="md:hidden bg-[#4f46e5] h-[40px] w-[40px] flex flex-col justify-between items-center rounded-full py-3 cursor-pointer active:scale-95 transition shadow-lg"
-          onClick={() => {
-            setMenuStatus("block");
-          }}
+          onClick={() => setIsOpen((isOpen) => !isOpen)}
+          className="md:hidden bg-indigo-700  h-[40px] w-[40px] flex flex-col justify-between items-center rounded-full py-3 cursor-pointer active:scale-95 transition shadow-lg"
         >
           <p className="h-[2px] w-[60%] bg-white "></p>
           <p className="h-[2px] w-[60%] bg-white "></p>
@@ -64,90 +69,49 @@ function Header() {
         </ul>
         <ResumeButton />
       </div>
-      <div
-        className={`bg-[#5951ee] text-white absolute top-0 w-screen h-screen transition-all flex flex-col items ${menuStatus}  `}
+
+      {/* sidebar for smaller screen */}
+      <motion.div
+        animate={isOpen ? "open" : "closed"}
+        variants={variants}
+        transition={{ duration: 0.1 }}
+        ease="easeIn"
+        className={`bg-gradient-to-b from-[#010330] via-[#000020] to-[#000000] text-white absolute top-0 w-screen h-screen transition-all flex flex-col items  `}
       >
         <div
-          className="bg-[#4f46e5] h-[40px] w-[40px] flex flex-col justify-center items-center rounded-full mt-[20px] mr-[8px] cursor-pointer active:scale-95 transition self-end m-2 shadow-lg"
-          onClick={() => {
-            setMenuStatus("invisible");
-          }}
+          onClick={() => setIsOpen((isOpen) => !isOpen)}
+          className="bg-white h-[40px] w-[40px] flex flex-col justify-center items-center rounded-full mt-[20px] mr-[8px] cursor-pointer active:scale-95 transition self-end m-2 shadow-lg"
         >
-          <p className="h-[2px] w-[60%] bg-white -rotate-[47deg]"></p>
-
-          <p className="h-[2px] w-[60%] bg-white rotate-45 "></p>
+          <p className="h-[2px] w-[60%] bg-indigo-700 -rotate-[47deg]"></p>
+          <p className="h-[2px] w-[60%] bg-indigo-700 rotate-45 "></p>
         </div>
 
         <div className=" flex flex-col justify-around items-center h-[70vh] ">
           <Link href="/">
-            <li
-              onClick={() => {
-                setMenuStatus("invisible");
-              }}
-              className="p-5 w-full text-center cursor-pointer border-l-4 border-transparent hover:border-white transition-all"
-            >
+            <li className="p-5 w-full text-center cursor-pointer border-l-4 border-transparent hover:border-white transition-all">
               Home
             </li>
           </Link>
           <Link href="/#project-section">
-            <li
-              onClick={() => {
-                setMenuStatus("invisible");
-              }}
-              className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all"
-            >
+            <li className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all">
               Projects
             </li>
           </Link>
           <Link href="/#about-section">
-            <li
-              onClick={() => {
-                setMenuStatus("invisible");
-              }}
-              className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all"
-            >
+            <li className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all">
               About
             </li>
           </Link>
           <Link href="/#contact-section">
-            <li
-              onClick={() => {
-                setMenuStatus("invisible");
-              }}
-              className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all"
-            >
+            <li className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all">
               Contact
             </li>
           </Link>
-          <li
-            onClick={() => {
-              setMenuStatus("invisible");
-            }}
-            className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all"
-          >
+          <li className="p-4 px-9 active:scale-95  text-center cursor-pointer   border-transparent bg-white text-black transition-all">
             Resume
           </li>
         </div>
-        <div className="scale-75 pt-[50px]  w-[200px] m-auto flex justify-between items- items-center  ">
-          <Image
-            src={Linkedin}
-            alt="Linkedin icon"
-            height={50}
-            width={50}
-            layout="fixed"
-            className="  cursor-pointer"
-          />
-
-          <Image
-            src={Github}
-            alt="Linkedin icon"
-            height={55}
-            width={55}
-            layout="fixed"
-            className="scale-105 cursor-pointer "
-          />
-        </div>
-      </div>
+      </motion.div>
     </motion.header>
   );
 }

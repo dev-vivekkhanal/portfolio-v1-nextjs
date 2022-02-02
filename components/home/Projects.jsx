@@ -41,11 +41,11 @@ function Projects() {
       <motion.h1
         animate={slideToLeft}
         ease="easeIn"
-        className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-gray-100  text-right mb-5 mr-5 "
+        className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-gray-200  text-right mb-5 mr-5 "
       >
         PROJECTS
       </motion.h1>
-      <div className=" mx-auto w-[95%] sm:w-[80%] md:w-[95%] xl:w-[85%] pt-[50px] pb-[50px] space-y-[150px]">
+      <div className=" mx-auto w-[95%] sm:w-[80%] md:w-[95%] xl:w-[80%] pt-[50px] pb-[50px] space-y-[150px]">
         <ProjectOne />
         <ProjectTwo />
         <ProjectThree />

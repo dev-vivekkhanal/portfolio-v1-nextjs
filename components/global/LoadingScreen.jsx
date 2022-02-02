@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 function LoadingScreen() {
   return (
     <motion.section
-      initial={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 4.7, duration: 0.2 }}
+      // initial={{ opacity: 1 }}
+      // animate={{ opacity: 1 }}
+      // transition={{ delay: 5, duration: 1 }}
       className="bg-slate-200  h-screen relative overflow-hidden"
     >
       <motion.div
         initial={{ x: "-100%" }}
         animate={{ x: "100%" }}
-        transition={{ delay: 4, duration: 1.5 }}
+        transition={{ delay: 4.5, duration: 1 }}
         ease="easeInOut"
         className="w-[500vw] bg-gradient-to-r from-[#060c80] via-[#01014d] to-[#000000] h-full  absolute top-0 z-40 "
       ></motion.div>
@@ -19,7 +19,7 @@ function LoadingScreen() {
         <motion.div
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
-          transition={{ delay: 4.2, duration: 0.5 }}
+          transition={{ delay: 4.5, duration: 0.5 }}
           className=" overflow-hidden pb-7 pt-3 "
         >
           <div className="text-3xl md:text-4xl lg:text-5xl  inline relative">
@@ -59,8 +59,8 @@ function LoadingScreen() {
               className="bg-gradient-to-r from-[#060c80] via-[#01014d] to-[#000000] h-full w-full absolute top-0 z-40 "
             ></motion.div>
             <motion.div
-              initial={{ x: "-100%" }}
-              animate={{ x: "100%" }}
+              initial={{ x: "-110%" }}
+              animate={{ x: "110%" }}
               transition={{ delay: 2, duration: 2 }}
               ease="easeInOut"
               className="bg-gradient-to-r from-[#2364f1] via-[#0d40ad] to-[#031846] h-full w-full absolute -bottom-full z-40"
@@ -73,8 +73,8 @@ function LoadingScreen() {
             transition={{ delay: 3, duration: 1.5 }}
             className="text-sm md:text-base lg:text-lg ml-2 mt-2 leading-none md:leading-none lg:leading-none relative"
           >
-            <p>Front-end Developer</p>
-            <p>Javascript | React | Next.js</p>
+            <p>Web Developer</p>
+            <p>Electronics & Comm Engineer</p>
           </motion.div>
         </motion.div>
       </div>

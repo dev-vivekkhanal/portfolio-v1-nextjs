@@ -12,7 +12,7 @@ export default function Home() {
   const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
-    setTimeout(() => setLoading(true), 4700);
+    setTimeout(() => setLoading(true), 5300);
   }, []);
   return (
     <>
@@ -25,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {loading ? (
-        <div className="relative cursor-default ">
+        <div className="relative cursor-default  ">
           <Header />
           <Landing />
           <Projects />

@@ -10,8 +10,8 @@ function Logo() {
         </h1>
       </Link>
       <p className="text-xs md:text-sm">
-        <span className="block">Front-end Developer</span>
-        <span>Javascript | React | Next.js</span>
+        <span className="block">Web Developer</span>
+        <span>Electronics & Comm Engineer</span>
       </p>
     </div>
   );

@@ -61,7 +61,7 @@ function Contact() {
       <motion.h1
         animate={slideToLeft}
         ease="easeIn"
-        className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-gray-100  text-right mb-5 mr-5 "
+        className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-gray-200  text-right mb-5 mr-5 "
       >
         GET IN TOUCH
       </motion.h1>

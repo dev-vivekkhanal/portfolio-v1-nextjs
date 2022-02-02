@@ -35,7 +35,7 @@ function About() {
       <motion.h1
         animate={slideToRight}
         ease="easeIn"
-        className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-gray-100     ml-5 "
+        className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-gray-200     ml-5 "
       >
         ABOUT ME
       </motion.h1>
