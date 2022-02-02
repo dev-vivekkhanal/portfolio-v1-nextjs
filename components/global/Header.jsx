@@ -5,13 +5,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import React from "react";
-import Image from "next/image";
-import Linkedin from "../../assets/images/linkedin.png";
-import Github from "../../assets/images/github.png";
 
 const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "100%" },
+  open: { x: 0 },
+  closed: { x: "150%" },
 };
 
 function Header() {
@@ -74,8 +71,7 @@ function Header() {
       <motion.div
         animate={isOpen ? "open" : "closed"}
         variants={variants}
-        transition={{ duration: 0.1 }}
-        ease="easeIn"
+        transition={{ duration: 0.2 }}
         className={`bg-gradient-to-b from-[#010330] via-[#000020] to-[#000000] text-white absolute top-0 w-screen h-screen transition-all flex flex-col items  `}
       >
         <div
@@ -88,28 +84,49 @@ function Header() {
 
         <div className=" flex flex-col justify-around items-center h-[70vh] ">
           <Link href="/">
-            <li className="p-5 w-full text-center cursor-pointer border-l-4 border-transparent hover:border-white transition-all">
+            <li
+              onClick={() => setIsOpen((isOpen) => !isOpen)}
+              className="p-5 w-full text-center cursor-pointer border-l-4 border-transparent hover:border-white transition-all"
+            >
               Home
             </li>
           </Link>
           <Link href="/#project-section">
-            <li className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all">
+            <li
+              onClick={() => setIsOpen((isOpen) => !isOpen)}
+              className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all"
+            >
               Projects
             </li>
           </Link>
           <Link href="/#about-section">
-            <li className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all">
+            <li
+              onClick={() => setIsOpen((isOpen) => !isOpen)}
+              className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all"
+            >
               About
             </li>
           </Link>
           <Link href="/#contact-section">
-            <li className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all">
+            <li
+              onClick={() => setIsOpen((isOpen) => !isOpen)}
+              className="p-5 w-full text-center cursor-pointer  border-l-4 border-transparent hover:border-white transition-all"
+            >
               Contact
             </li>
           </Link>
-          <li className="p-4 px-9 active:scale-95  text-center cursor-pointer   border-transparent bg-white text-black transition-all">
-            Resume
-          </li>
+          <a
+            href="/resume.pdf"
+            download="Vivek-Khanal-Resume.pdf"
+            className=" p-2 rounded-md"
+          >
+            <li
+              onClick={() => setIsOpen((isOpen) => !isOpen)}
+              className="p-4 px-9 active:scale-95  text-center cursor-pointer   border-transparent bg-white text-black transition-all"
+            >
+              Resume
+            </li>
+          </a>
         </div>
       </motion.div>
     </motion.header>
