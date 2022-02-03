@@ -43,7 +43,7 @@ function Footer() {
         </div>
         <hr />
         <p className="text-xs py-5 md:py-10 text-center">
-          © Copyright 2021. Made by{" "}
+          © Copyright 2021. Made by{"  "}
           <span className="font-semibold text-rose-400">Vivek Khanal</span>
         </p>
       </div>
