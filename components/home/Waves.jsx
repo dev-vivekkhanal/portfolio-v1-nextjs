@@ -2,13 +2,7 @@ import { motion } from "framer-motion";
 
 function Waves() {
   return (
-    <motion.div
-      initial={{ bottom: -80, opacity: 0 }}
-      animate={{ bottom: 0, opacity: 1 }}
-      transition={{ delay: 0.5, duration: 0.5 }}
-      ease="easeIn"
-      className="rotate-180 absolute right-0 bottom-0 w-[100%] overflow-hidden left-0 leading-none z-40 "
-    >
+    <div className="rotate-180 absolute right-0 bottom-0 w-[100%] overflow-hidden left-0 leading-none z-40 ">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1200 80"
@@ -21,7 +15,7 @@ function Waves() {
           fillOpacity="1"
         ></path>
       </svg>
-    </motion.div>
+    </div>
   );
 }
 

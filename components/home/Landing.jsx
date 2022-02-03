@@ -13,12 +13,12 @@ function Home() {
       ease="easeIn"
       className="relative text-center bg-[url('../assets/images/homeBg.webp')] bg-cover bg-no-repeat bg-center  text-white"
     >
-      <div className="bg-[#00000080] h-[90vh] lg:h-screen   pt-[200px]">
+      <div className="bg-[#00000080]    pt-[200px]">
         <p className="text-2xl lg:text-[28px]">Plan &gt; Build &gt; Optimise</p>
         <p className="text-[2.5rem]   max-w-2xl  m-auto mt-12 sm:text-6xl md:text-6xl lg:text-7xl lg:max-w-3xl  lg:leading-tight">
           I build awesome web apps using modern workflows
         </p>
-        <div>
+        <div className=" pb-[250px] md:pb-[300px]">
           <Link href="/#contact-section">
             <button className="p-3 px-6 lg:px-12 mx-5 mt-10 cursor-pointer active:scale-95 transition-all bg-[#5951ee] hover:bg-[#443bec] rounded sm:text-xl">
               Hire Me

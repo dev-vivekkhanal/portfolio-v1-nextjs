@@ -4,6 +4,7 @@ import ProjectThree from "./ProjectThree";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import ProjectWrapper from "./ProjectWrapper";
 
 function Projects() {
   const { ref, inView } = useInView({
@@ -45,11 +46,12 @@ function Projects() {
       >
         PROJECTS
       </motion.h1>
-      <div className=" mx-auto w-[95%] sm:w-[80%] md:w-[95%] xl:w-[80%] pt-[50px] pb-[50px] space-y-[150px]">
+
+      <ProjectWrapper>
         <ProjectOne />
         <ProjectTwo />
         <ProjectThree />
-      </div>
+      </ProjectWrapper>
     </section>
   );
 }

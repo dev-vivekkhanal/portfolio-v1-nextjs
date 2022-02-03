@@ -1,45 +1,11 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Netflix1 from "../../assets/images/netflix-1.webp";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import { useAnimation } from "framer-motion";
 
 function ProjectOne() {
-  const { ref, inView } = useInView({
-    threshold: 0.3,
-  });
-  const slideToRight = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      slideToRight.start({
-        x: 0,
-        transition: {
-          duration: 1.5,
-          type: "spring",
-          bounce: 0.1,
-        },
-      });
-    }
-    if (!inView) {
-      slideToRight.start({
-        x: "-100vw",
-        transition: {
-          duration: 1.5,
-        },
-      });
-    }
-  }, [inView]);
-
   return (
-    <div ref={ref}>
-      <motion.div
-        animate={slideToRight}
-        ease="easeIn"
-        className="md:flex md:items-center bg-white p-2 rounded-lg pb-10 border-b-2"
-      >
+    <div>
+      <div className="md:flex md:items-center bg-white p-2 rounded-lg pb-10 border-b-2">
         <div className="md:w-3/6 mb-5 md:mb-0 md:mr-5 relative ">
           <Image
             src={Netflix1}
@@ -76,7 +42,7 @@ function ProjectOne() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }
