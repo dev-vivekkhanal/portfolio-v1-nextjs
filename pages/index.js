@@ -13,7 +13,7 @@ export default function Home() {
 
   React.useEffect(() => {
     setTimeout(() => setLoading(true), 5400);
-  }, []);
+  });
   return (
     <>
       <Head>

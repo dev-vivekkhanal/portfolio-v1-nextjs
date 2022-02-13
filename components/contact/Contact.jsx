@@ -111,7 +111,12 @@ function Contact() {
               </div>
 
               <div className=" flex  justify-center p-5   items-center">
-                <div className="bg-slate-300 p-1 mr-5 rounded-full flex justify-center items-center scale-90 cursor-pointer hover:bg-slate-100 transition-all active:bg-slate-500">
+                <a
+                  href="https://www.linkedin.com/in/vivek-khanal-793016231/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-slate-300 p-1 mr-5 rounded-full flex justify-center items-center scale-90 cursor-pointer hover:bg-slate-100 transition-all active:bg-slate-500"
+                >
                   <Image
                     src={Linkedin}
                     alt="Linkedin icon"
@@ -119,15 +124,21 @@ function Contact() {
                     width={28}
                     layout="fixed"
                   />
-                </div>
-                <Image
-                  src={Github}
-                  alt="Linkedin icon"
-                  height={30}
-                  width={30}
-                  layout="fixed"
-                  className="bg-clip-content  bg-slate-300 rounded-full cursor-pointer hover:bg-slate-100 transition-all active:bg-slate-500"
-                />
+                </a>
+                <a
+                  href="https://github.com/dev-vivekkhanal"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image
+                    src={Github}
+                    alt="Linkedin icon"
+                    height={30}
+                    width={30}
+                    layout="fixed"
+                    className="bg-clip-content  bg-slate-300 rounded-full cursor-pointer hover:bg-slate-100 transition-all active:bg-slate-500"
+                  />
+                </a>
               </div>
             </div>
           </div>

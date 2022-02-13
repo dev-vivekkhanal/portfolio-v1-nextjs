@@ -19,26 +19,37 @@ function ProjectOne() {
               Netflix Clone
             </h2>
             <p className="mb-2">
-              Netflix is a streaming service that allows members to watch TV
-              shows and movies without commercials on an internet-connected
-              device.
+              This web app is a clone of Netflix. I tried to clone the UI and
+              some of its functionanilty using the tech stack I am familiar
+              with.
             </p>
             <h3 className="text-xl  font-semibold ">Features</h3>
             <p className="mb-2">
-              User Authentication | Server Side Rendering | Lazy Load | API
-              integration
+              User Authentication | Server Side Rendering | API integration |
+              Online video player | Responsive Design
             </p>
             <h3 className="text-xl  font-semibold ">Technologies used</h3>
             <p className="mb-5">
-              HTML | CSS | Tailwind CSS | React | Next Js | Firebase | Node Js
+              HTML | CSS | JavaScript | Tailwind CSS | React | Next Js |
+              Firebase
             </p>
             <div>
-              <button className="bg-[#5951ee] hover:bg-[#443bec] active:scale-95 transition-all text-white p-3 px-6 rounded cursor-pointer mr-5 ">
+              <a
+                href="https://github.com/dev-vivekkhanal/NetflixClone-nextjs"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#5951ee] hover:bg-[#443bec] active:scale-95 transition-all text-white p-3 px-6 rounded cursor-pointer mr-5 "
+              >
                 Code
-              </button>
-              <button className="bg-[#5951ee] hover:bg-[#443bec] active:scale-95 transition-all text-white p-3 px-6 rounded cursor-pointer ">
+              </a>
+              <a
+                href="https://netflix-clone-nextjs-rosy.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#5951ee] hover:bg-[#443bec] active:scale-95 transition-all text-white p-3 px-6 rounded cursor-pointer "
+              >
                 Live
-              </button>
+              </a>
             </div>
           </div>
         </div>

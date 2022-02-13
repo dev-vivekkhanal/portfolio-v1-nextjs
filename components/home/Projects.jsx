@@ -8,7 +8,7 @@ import ProjectWrapper from "./ProjectWrapper";
 
 function Projects() {
   const { ref, inView } = useInView({
-    threshold: 0.1,
+    threshold: 0.2,
   });
   const slideToLeft = useAnimation();
 
@@ -50,7 +50,7 @@ function Projects() {
       <ProjectWrapper>
         <ProjectOne />
         <ProjectTwo />
-        <ProjectThree />
+        {/* <ProjectThree /> */}
       </ProjectWrapper>
     </section>
   );

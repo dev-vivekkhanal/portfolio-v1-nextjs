@@ -43,36 +43,48 @@ function About() {
       <div className="w-[95%] mx-auto sm:w-[90%] lg:flex   justify-center items-center">
         <div className="text-base sm:text-lg  w-fit max-w-xl sm:mx-[50px] md:ml-[90px] ">
           <h3 className="text-3xl font-semibold text-[#4f46e5]  ">Who am I?</h3>
-          <p className="mt-5">
-            Hi there, my name is{" "}
-            <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
-              Vivek Khanal
-            </strong>
-            . I m a{" "}
-            <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
-              {" "}
-              Web Developer{" "}
-            </strong>{" "}
-            and{" "}
-            <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
-              {" "}
-              Electronics & Communication Engineer
-            </strong>
-            . I help designers, small agencies and businesses bring their ideas
-            to life. Check out my
-            <Link href="/#project-section">
+          <div className="mt-5">
+            <p>
+              Hi there, my name is{" "}
+              <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
+                Vivek Khanal
+              </strong>
+              . I m a{" "}
               <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
                 {" "}
-                projects
+                Web Developer{" "}
+              </strong>{" "}
+              and{" "}
+              <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
+                {" "}
+                Electronics & Communication Engineer
               </strong>
-            </Link>{" "}
-            to see what I m capable of. Feel free to connect or follow me on my
-            <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
-              {" "}
-              LikedIn
-            </strong>
-            .
-          </p>
+              . I help designers, small agencies and businesses bring their
+              ideas to life.
+            </p>
+
+            <p>
+              Check out my
+              <Link href="/#project-section">
+                <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium cursor-pointer">
+                  {" "}
+                  projects
+                </strong>
+              </Link>{" "}
+              to see what I m capable of. Feel free to connect or follow me on
+              my
+              <a
+                href="https://www.linkedin.com/in/vivek-khanal-793016231/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#6366f1] text-xl sm:text-2xl font-medium"
+              >
+                {" "}
+                LikedIn
+              </a>
+              .
+            </p>
+          </div>
 
           <a
             href="/resume.pdf"

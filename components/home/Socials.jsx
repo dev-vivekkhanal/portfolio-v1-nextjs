@@ -13,7 +13,12 @@ function Socials() {
       className=" absolute h-screen top-0 left-0 flex items-center"
     >
       <div className="hidden md:flex  flex-col justify-between  px-5 h-[200px] ">
-        <div className="bg-slate-400 p-2 rounded-full flex justify-center items-center scale-90 cursor-pointer hover:bg-slate-100 transition-all active:bg-slate-500">
+        <a
+          href="https://www.linkedin.com/in/vivek-khanal-793016231/"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-slate-400 p-2 rounded-full flex justify-center items-center scale-90 cursor-pointer hover:bg-slate-100 transition-all active:bg-slate-500"
+        >
           <Image
             src={Linkedin}
             alt="Linkedin icon"
@@ -22,15 +27,21 @@ function Socials() {
             layout="fixed"
             className=" "
           />
-        </div>
-        <Image
-          src={Github}
-          alt="Linkedin icon"
-          height={55}
-          width={55}
-          layout="fixed"
-          className="bg-clip-content bg-slate-400 rounded-full cursor-pointer hover:bg-slate-100 transition-all active:bg-slate-500"
-        />
+        </a>
+        <a
+          href="https://github.com/dev-vivekkhanal"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image
+            src={Github}
+            alt="Linkedin icon"
+            height={55}
+            width={55}
+            layout="fixed"
+            className="bg-clip-content bg-slate-400 rounded-full cursor-pointer hover:bg-slate-100 transition-all active:bg-slate-500"
+          />
+        </a>
       </div>
     </motion.div>
   );

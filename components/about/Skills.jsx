@@ -6,6 +6,7 @@ import tailwind from "../../assets/images/tailwind.png";
 import react from "../../assets/images/react.png";
 import nextjs from "../../assets/images/nextjs.png";
 import firebase from "../../assets/images/firebase.png";
+import git from "../../assets/images/git.png";
 
 function Skills() {
   return (
@@ -53,7 +54,7 @@ function Skills() {
           <div className="relative w-[50px]">
             <Image src={nextjs} layout="responsive" />
           </div>
-          <span className="font-semibold">NextJs</span>
+          <span className="font-semibold">Next Js</span>
         </div>
 
         <div className="flex flex-col justify-center items-center shadow p-5 hover:shadow-xl transition-all m-1">
@@ -61,6 +62,13 @@ function Skills() {
             <Image src={firebase} layout="responsive" />
           </div>
           <span className="font-semibold">Firebase</span>
+        </div>
+
+        <div className="flex flex-col justify-center items-center shadow p-5 hover:shadow-xl transition-all m-1">
+          <div className="relative w-[50px]">
+            <Image src={git} layout="responsive" />
+          </div>
+          <span className="font-semibold">Git</span>
         </div>
       </div>
     </div>
