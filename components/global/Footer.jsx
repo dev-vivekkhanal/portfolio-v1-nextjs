@@ -20,7 +20,7 @@ function Footer() {
           </div>
           <div className="pt-10 md:py-24  md:w-[15%] lg:w-[10%]">
             <h1 className="font-bold text-xl md:text-2xl    mb-5">SOCIALS</h1>
-            <div className=" flex  justify-start items-center">
+            <div className=" flex  justify-start items-start ">
               <a
                 href="https://www.linkedin.com/in/vivek-khanal-793016231/"
                 target="_blank"
@@ -30,8 +30,8 @@ function Footer() {
                 <Image
                   src={Linkedin}
                   alt="Linkedin icon"
-                  height={28}
-                  width={28}
+                  height={26}
+                  width={26}
                   layout="fixed"
                 />
               </a>
@@ -55,7 +55,14 @@ function Footer() {
         <hr />
         <p className="text-xs py-5 md:py-10 text-center">
           © Copyright 2021. Made by{"  "}
-          <span className="font-semibold text-rose-400">Vivek Khanal</span>
+          <a
+            href="https://www.linkedin.com/in/vivek-khanal-793016231/"
+            target="_blank"
+            rel="noreferrer"
+            className="font-semibold text-rose-400"
+          >
+            Vivek Khanal
+          </a>
         </p>
       </div>
     </footer>

@@ -10,11 +10,11 @@ import git from "../../assets/images/git.png";
 
 function Skills() {
   return (
-    <div className="mt-14  max-w-xl sm:mx-[50px] md:ml-[90px]  ">
+    <div className=" mt-14 lg:mt-0  max-w-xl sm:mx-[50px] md:ml-[90px]  ">
       <h3 className="text-3xl font-semibold text-[#4f46e5]  mb-10">
         My Skills
       </h3>
-      <div className="flex flex-wrap ">
+      <div className="flex flex-wrap items-center ">
         <div className="flex flex-col justify-center items-center shadow p-5 hover:shadow-xl transition-all m-1">
           <div className="relative w-[50px]">
             <Image src={html} layout="responsive" />
@@ -47,14 +47,14 @@ function Skills() {
           <div className="relative w-[50px]">
             <Image src={react} layout="responsive" />
           </div>
-          <span className="font-semibold">React</span>
+          <span className="font-semibold">React JS</span>
         </div>
 
         <div className="flex flex-col justify-center items-center shadow p-5 hover:shadow-xl transition-all m-1">
           <div className="relative w-[50px]">
             <Image src={nextjs} layout="responsive" />
           </div>
-          <span className="font-semibold">Next Js</span>
+          <span className="font-semibold">Next JS</span>
         </div>
 
         <div className="flex flex-col justify-center items-center shadow p-5 hover:shadow-xl transition-all m-1">

@@ -8,7 +8,7 @@ import ProjectWrapper from "./ProjectWrapper";
 
 function Projects() {
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.3,
   });
   const slideToLeft = useAnimation();
 
@@ -42,7 +42,7 @@ function Projects() {
       <motion.h1
         animate={slideToLeft}
         ease="easeIn"
-        className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-gray-200  text-right mb-5 mr-5 "
+        className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-gray-200  text-right mb-5 mr-5 "
       >
         PROJECTS
       </motion.h1>

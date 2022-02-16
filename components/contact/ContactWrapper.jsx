@@ -2,7 +2,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
-function ProjectWrapper(props) {
+function ContactWrapper(props) {
   const { ref, inView } = useInView({
     threshold: 0.3,
   });
@@ -31,15 +31,11 @@ function ProjectWrapper(props) {
 
   return (
     <div ref={ref}>
-      <motion.div
-        animate={slideToRight}
-        ease="easeIn"
-        className="mx-auto w-[95%] sm:w-[80%] md:w-[95%] xl:w-[80%] pt-[50px] pb-[50px] space-y-[150px]"
-      >
+      <motion.div animate={slideToRight} ease="easeIn">
         {props.children}
       </motion.div>
     </div>
   );
 }
 
-export default ProjectWrapper;
+export default ContactWrapper;

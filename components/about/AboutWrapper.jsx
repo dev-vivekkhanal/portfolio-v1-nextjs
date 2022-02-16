@@ -2,15 +2,15 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
-function ProjectWrapper(props) {
+function AboutWrapper(props) {
   const { ref, inView } = useInView({
     threshold: 0.3,
   });
-  const slideToRight = useAnimation();
+  const slideToLeft = useAnimation();
 
   useEffect(() => {
     if (inView) {
-      slideToRight.start({
+      slideToLeft.start({
         x: 0,
         transition: {
           duration: 1,
@@ -20,8 +20,8 @@ function ProjectWrapper(props) {
       });
     }
     if (!inView) {
-      slideToRight.start({
-        x: "-100vw",
+      slideToLeft.start({
+        x: "100vw",
         transition: {
           duration: 1,
         },
@@ -30,11 +30,11 @@ function ProjectWrapper(props) {
   }, [inView]);
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="overflow-x-hidden">
       <motion.div
-        animate={slideToRight}
+        animate={slideToLeft}
         ease="easeIn"
-        className="mx-auto w-[95%] sm:w-[80%] md:w-[95%] xl:w-[80%] pt-[50px] pb-[50px] space-y-[150px]"
+        className="overflow-x-hidden"
       >
         {props.children}
       </motion.div>
@@ -42,4 +42,4 @@ function ProjectWrapper(props) {
   );
 }
 
-export default ProjectWrapper;
+export default AboutWrapper;

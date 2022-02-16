@@ -14,14 +14,13 @@ function ProjectOne() {
           />
         </div>
         <div className="md:w-3/6 ">
-          <div className="md:flex md:flex-col justify-center lg:w-[80%]">
+          <div className="md:flex md:flex-col justify-center md:w-[80%]">
             <h2 className="text-[#6366f1] font-medium text-2xl lg:text-4xl mb-1 lg:mb-4">
               Netflix Clone
             </h2>
             <p className="mb-2">
               This web app is a clone of Netflix. I tried to clone the UI and
-              some of its functionanilty using the tech stack I am familiar
-              with.
+              some of its functionality using the tech stack I am familiar with.
             </p>
             <h3 className="text-xl  font-semibold ">Features</h3>
             <p className="mb-2">
@@ -30,7 +29,7 @@ function ProjectOne() {
             </p>
             <h3 className="text-xl  font-semibold ">Technologies used</h3>
             <p className="mb-5">
-              HTML | CSS | JavaScript | Tailwind CSS | React | Next Js |
+              HTML | CSS | JavaScript | Tailwind CSS | React JS | Next JS |
               Firebase
             </p>
             <div>
