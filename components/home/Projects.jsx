@@ -2,7 +2,7 @@ import ProjectOne from "./ProjectOne";
 import ProjectTwo from "./ProjectTwo";
 import ProjectThree from "./ProjectThree";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import ProjectWrapper from "./ProjectWrapper";
 
@@ -12,8 +12,11 @@ function Projects() {
   });
   const slideToLeft = useAnimation();
 
+  const [inViewCounter, setInViewCounter] = useState(0);
+
   useEffect(() => {
-    if (inView) {
+    setInViewCounter(inViewCounter + 1);
+    if (inView && inViewCounter < 2) {
       slideToLeft.start({
         x: 0,
         transition: {
@@ -23,9 +26,18 @@ function Projects() {
         },
       });
     }
-    if (!inView) {
+    if (!inView && inViewCounter < 2) {
       slideToLeft.start({
         x: "100vw",
+        transition: {
+          duration: 1,
+        },
+      });
+    }
+
+    if (!inView && inViewCounter > 2) {
+      slideToLeft.start({
+        x: 0,
         transition: {
           duration: 1,
         },

@@ -5,7 +5,7 @@ import Netflix1 from "../../assets/images/netflix-1.webp";
 function ProjectOne() {
   return (
     <div>
-      <div className="md:flex md:items-center bg-white p-2 rounded-lg pb-10 border-b-2">
+      <div className="md:flex  bg-white p-2 rounded-lg pb-10 border-b-2">
         <div className="md:w-3/6 mb-5 md:mb-0 md:mr-5 relative ">
           <Image
             src={Netflix1}

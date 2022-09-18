@@ -1,6 +1,6 @@
 import Skills from "./Skills";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Link from "next/link";
 import AboutWrapper from "./AboutWrapper";
@@ -10,9 +10,11 @@ function About() {
     threshold: 0.3,
   });
   const slideToRight = useAnimation();
-
+  const [inViewCounter, setInViewCounter] = useState(0);
   useEffect(() => {
-    if (inView) {
+    setInViewCounter(inViewCounter + 1);
+
+    if (inView && inViewCounter < 2) {
       slideToRight.start({
         x: 0,
         transition: {
@@ -22,9 +24,18 @@ function About() {
         },
       });
     }
-    if (!inView) {
+    if (!inView && inViewCounter < 2) {
       slideToRight.start({
         x: "-100vw",
+        transition: {
+          duration: 1,
+        },
+      });
+    }
+
+    if (!inView && inViewCounter > 2) {
+      slideToRight.start({
+        x: 0,
         transition: {
           duration: 1,
         },

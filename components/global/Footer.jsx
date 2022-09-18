@@ -54,7 +54,7 @@ function Footer() {
         </div>
         <hr />
         <p className="text-xs py-5 md:py-10 text-center">
-          © Copyright 2021. Made by{"  "}
+          © Copyright {new Date().getFullYear()} Made by{"  "}
           <a
             href="https://www.linkedin.com/in/vivek-khanal-793016231/"
             target="_blank"

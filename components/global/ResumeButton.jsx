@@ -1,7 +1,7 @@
 function ResumeButton() {
   return (
     <>
-      <div className="hidden md:flex justify-between items-center bg-[#5951ee] hover:bg-[#443bec] text-white  rounded-md cursor-pointer active:scale-95 transition-all">
+      <div className="hidden md:flex justify-between items-center bg-[#5951ee] hover:bg-[#443bec] text-white  rounded-md cursor-pointer active:scale-95 transition-all w-fit ml-auto">
         <a
           href="/resume.pdf"
           download="Vivek-Khanal-Resume.pdf"

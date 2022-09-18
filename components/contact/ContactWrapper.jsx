@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function ContactWrapper(props) {
   const { ref, inView } = useInView({
@@ -8,8 +8,12 @@ function ContactWrapper(props) {
   });
   const slideToRight = useAnimation();
 
+  const [inViewCounter, setInViewCounter] = useState(0);
+
   useEffect(() => {
-    if (inView) {
+    setInViewCounter(inViewCounter + 1);
+
+    if (inView && inViewCounter < 2) {
       slideToRight.start({
         x: 0,
         transition: {
@@ -19,9 +23,18 @@ function ContactWrapper(props) {
         },
       });
     }
-    if (!inView) {
+    if (!inView && inViewCounter < 2) {
       slideToRight.start({
         x: "-100vw",
+        transition: {
+          duration: 1,
+        },
+      });
+    }
+
+    if (!inView && inViewCounter > 2) {
+      slideToRight.start({
+        x: 0,
         transition: {
           duration: 1,
         },

@@ -38,7 +38,9 @@ function Header() {
       className={`${navBg} fixed w-full text-white  z-50 `}
     >
       <div className="flex justify-between items-center p-2 md:px-4 lg:px-6 text-sm md:text-base">
-        <Logo />
+        <div className="md:w-full">
+          <Logo />
+        </div>
         <div
           onClick={() => setIsOpen((isOpen) => !isOpen)}
           className="md:hidden bg-indigo-700  h-[40px] w-[40px] flex flex-col justify-between items-center rounded-full py-3 cursor-pointer active:scale-95 transition shadow-lg"
@@ -47,7 +49,7 @@ function Header() {
           <p className="h-[2px] w-[60%] bg-white "></p>
           <p className="h-[2px] w-[60%] bg-white "></p>
         </div>
-        <ul className="hidden md:flex ">
+        <ul className="hidden md:flex  justify-center items-center gap-5 w-full ">
           <Link href="/#project-section">
             <li className="p-5 mx-2 lg:mx-3 cursor-pointer border-b-4 border-transparent hover:border-slate-300 ">
               Projects
@@ -64,7 +66,10 @@ function Header() {
             </li>
           </Link>
         </ul>
-        <ResumeButton />
+
+        <div className="hidden md:block md:w-full ">
+          <ResumeButton />
+        </div>
       </div>
 
       {/* sidebar for smaller screen */}

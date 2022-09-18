@@ -17,8 +17,12 @@ function Contact() {
   });
   const slideToLeft = useAnimation();
 
+  const [inViewCounter, setInViewCounter] = useState(0);
+
   useEffect(() => {
-    if (inView) {
+    setInViewCounter(inViewCounter + 1);
+
+    if (inView && inViewCounter < 2) {
       slideToLeft.start({
         x: 0,
         transition: {
@@ -28,9 +32,18 @@ function Contact() {
         },
       });
     }
-    if (!inView) {
+    if (!inView && inViewCounter < 2) {
       slideToLeft.start({
         x: "100vw",
+        transition: {
+          duration: 1,
+        },
+      });
+    }
+
+    if (!inView && inViewCounter > 2) {
+      slideToLeft.start({
+        x: 0,
         transition: {
           duration: 1,
         },

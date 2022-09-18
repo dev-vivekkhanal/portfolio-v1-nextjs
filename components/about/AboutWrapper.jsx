@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function AboutWrapper(props) {
   const { ref, inView } = useInView({
@@ -8,8 +8,12 @@ function AboutWrapper(props) {
   });
   const slideToLeft = useAnimation();
 
+  const [inViewCounter, setInViewCounter] = useState(0);
+
   useEffect(() => {
-    if (inView) {
+    setInViewCounter(inViewCounter + 1);
+
+    if (inView && inViewCounter < 2) {
       slideToLeft.start({
         x: 0,
         transition: {
@@ -19,9 +23,18 @@ function AboutWrapper(props) {
         },
       });
     }
-    if (!inView) {
+    if (!inView && inViewCounter < 2) {
       slideToLeft.start({
         x: "100vw",
+        transition: {
+          duration: 1,
+        },
+      });
+    }
+
+    if (!inView && inViewCounter > 2) {
+      slideToLeft.start({
+        x: 0,
         transition: {
           duration: 1,
         },
