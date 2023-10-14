@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Vivek Khanal | Web Dev | Engineer</title>
+        <title>Vivek Khanal | SDE | Engineer</title>
         <meta
           name="description"
-          content="Web developer Vivek Khanal's portfolio website "
+          content="Software developer Vivek Khanal's portfolio website "
         />
         <link rel="icon" href="/vivek-icon.ico" />
       </Head>

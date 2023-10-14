@@ -16,7 +16,7 @@ function Home() {
       <div className="bg-[#00000080]    pt-[200px]">
         <p className="text-2xl lg:text-[28px]">Plan &gt; Build &gt; Optimise</p>
         <p className="text-[2.5rem]   max-w-2xl  m-auto mt-12 sm:text-6xl md:text-6xl lg:text-7xl lg:max-w-3xl  lg:leading-tight">
-          I build awesome web apps using modern workflows
+          I build awesome apps using modern workflows
         </p>
         <div className=" pb-[250px] md:pb-[300px]">
           <Link href="/#contact-section">

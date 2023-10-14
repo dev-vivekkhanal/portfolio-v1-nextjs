@@ -73,7 +73,7 @@ function LoadingScreen() {
             transition={{ delay: 3.5, duration: 1.5 }}
             className="text-sm md:text-base lg:text-lg ml-2 mt-2 leading-none md:leading-none lg:leading-none relative"
           >
-            <p>Web Developer</p>
+            <p>Software Developer</p>
             <p>Electronics & Comm Engineer</p>
           </motion.div>
         </motion.div>

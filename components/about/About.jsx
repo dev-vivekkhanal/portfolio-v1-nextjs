@@ -71,7 +71,7 @@ function About() {
                 . I m a{" "}
                 <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
                   {" "}
-                  Web Developer{" "}
+                  Software Developer{" "}
                 </strong>{" "}
                 and{" "}
                 <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">

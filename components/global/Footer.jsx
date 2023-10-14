@@ -14,8 +14,8 @@ function Footer() {
               VIVEK KHANAL
             </h1>
             <p className="text-sm md:pr-10">
-              A Web Developer building Websites and Web Applications that leads
-              to the success of the overall product
+              A Software Developer building Websites and Web Applications that
+              leads to the success of the overall product
             </p>
           </div>
           <div className="pt-10 md:py-24  md:w-[15%] lg:w-[10%]">
