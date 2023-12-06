@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Vivek Khanal | SDE | Engineer</title>
+        <title>Vivek Khanal | React JS Developer</title>
         <meta
           name="description"
           content="Software developer Vivek Khanal's portfolio website "

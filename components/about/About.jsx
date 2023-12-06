@@ -71,15 +71,15 @@ function About() {
                 . I m a{" "}
                 <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
                   {" "}
-                  Software Developer{" "}
+                  Frontend Web Developer{" "}
                 </strong>{" "}
                 and{" "}
                 <strong className="text-[#6366f1] text-xl sm:text-2xl font-medium">
                   {" "}
                   Electronics & Communication Engineer
                 </strong>
-                . I help designers, small agencies and businesses bring their
-                ideas to life.
+                . I specialize in React JS and help designers, small agencies
+                and businesses bring their ideas to life.
               </p>
 
               <p>

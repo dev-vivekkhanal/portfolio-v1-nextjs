@@ -10,7 +10,7 @@ function Logo() {
         </h1>
       </Link>
       <p className="text-xs md:text-sm">
-        <span className="block">Software Developer</span>
+        <span className="block">React JS Developer</span>
         <span>Electronics & Comm Engineer</span>
       </p>
     </div>
