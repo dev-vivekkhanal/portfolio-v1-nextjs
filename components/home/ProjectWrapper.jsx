@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 function ProjectWrapper(props) {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.05,
   });
   const slideToRight = useAnimation();
 
